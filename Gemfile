@@ -32,9 +32,19 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+# Authentication
+gem 'devise'
+
+# Bootstrap 4
+gem 'bootstrap', '~> 4.3'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+#  configuring markdown
+# https://www.codefellows.org/blog/how-to-create-a-markdown-friendly-blog-in-a-rails-app/
+# https://www.mirrorcommunications.com/blog/adding-markdown-syntax-highlighting-to-your-rails-app
+gem 'redcarpet', '~> 3.4'
+gem 'rouge', '~> 3.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

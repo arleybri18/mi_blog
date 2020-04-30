@@ -1,0 +1,16 @@
+<!-- Blog Post -->
+<div class="card mb-4">
+  <img class="card-img-top" src=<%= post.image_url %> alt="Card image cap">
+  <div class="card-body">
+    <h2 class="card-title"><%= post.title %></h2>
+    <% if action_name == "index" %>
+      <p class="card-text"><%= truncate( post.body, length: 200) %></p>
+      <%= link_to "Leer mas &rarr;".html_safe, post_path(post), class: "btn btn-primary" %>
+    <% else %>
+      <p class="card-text"><%= post.body %></p>
+    <% end %>
+  </div>
+  <div class="card-footer text-muted">
+    Posted on <%= post.created_at.strftime("%A, %b %d %Y") %>
+  </div>
+</div>

@@ -54,6 +54,9 @@ group :development, :test do
 
   # use factory bot
   gem 'factory_bot_rails'
+
+  # faker data
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 end
 
 group :development do

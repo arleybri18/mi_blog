@@ -43,7 +43,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 #  configuring markdown
 # https://www.codefellows.org/blog/how-to-create-a-markdown-friendly-blog-in-a-rails-app/
 # https://www.mirrorcommunications.com/blog/adding-markdown-syntax-highlighting-to-your-rails-app
-gem 'redcarpet', '~> 3.4'
+gem 'redcarpet', '~> 3.5'
 gem 'rouge', '~> 3.3'
 
 group :development, :test do
